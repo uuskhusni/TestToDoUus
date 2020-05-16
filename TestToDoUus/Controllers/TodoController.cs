@@ -15,6 +15,7 @@ namespace TestToDoUus.Controllers
     [Produces("application/json")]
     [Route("api/Todo")]
     [ApiController]
+
     public class TodoController : ControllerBase
     {
         private readonly IOptions<MySettingsModel> appSettings;
