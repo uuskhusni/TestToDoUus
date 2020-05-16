@@ -45,7 +45,7 @@ namespace TestToDoUus.Controllers
 
         //Get Next Todo
         [HttpGet]
-        [Route("GetToDoByID/{today}")]
+        [Route("GetNextTodo/{today}")]
         public IActionResult GetNextTodo(string today)
         {
             var data = DbClientFactory<UserDbClient>.Instance.GetNextTodo(today, appSettings.Value.DbConn);
